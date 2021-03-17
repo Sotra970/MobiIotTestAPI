@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9CAD39</color>
+    <color name="colorPackage">#B2240B</color>
+
+    <color name="colorPrimary1">#668B20</color>
+    <color name="colorPrimaryDark1">#455D18</color>
+    <color name="colorConnectivity">#4DADC2</color>
+    <color name="colorPackage1">#BD98DD</color>
+
+    <color name="colorPrimary2">#9CAD39</color>
+    <color name="colorPrimaryDark2">#D6D374</color>
+    <color name="colorAccent2">#E0BF48</color>
+    <color name="colorReboot">#946B86</color>
+
+    <color name="colorLightGreen0">#DFEFC0</color>
+    <color name="colorMaterialGreen">#74982F</color>
+    <color name="white">#ffff</color>
+    <color name="colorStore">#26A69A</color>
+    <color name="colorApplication">#8e99f3</color>
+    <color name="colorAnimation">#a1887f</color>
+
+    <color name="SIM">#0d47a1</color>
+    <color name="APN">#1976d2</color>
+    <color name="APN2">#CBD8B9</color>
+    <color name="DATA">#42a5f5</color>
+    <color name="SAM">#BD98DD</color>
+
+    <color name="WIFI">#004d40</color>
+    <color name="Reboot">#00897b</color>
+    <color name="Operation">#80cbc4</color>
+    <color name="Location">#33691e</color>
+
+    <color name="Security">#689f38</color>
+    <color name="Package">#aed581</color>
+    <color name="Keystore">#5d4037</color>
+
+    <color name="Scanner_Head">#26A69C</color>
+    <color name="Kiosk">#795548</color>
+    <color name="Touch">#a1887f</color>
+
+    <color name="Bluetooth">#4527a0</color>
+    <color name="NFC">#a1887f</color>
+    <color name="Device">#7e57c2</color>
+    <color name="Scanner">#b39ddb</color>
+    <color name="Scanner2">#ffab91</color>
+
+    <color name="updateServer">#d84315</color>
+    <color name="CBM">#ff7043</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

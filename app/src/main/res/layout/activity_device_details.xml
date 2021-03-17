@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/refresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.mobiiot.client.Activity.DeviceDetailsActivity">
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Device"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewUpTimeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UP TIME : "
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewUpTimeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_weight="5"
+                        android:text="fachati  "
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IP : "
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textIp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_weight="5"
+                        android:text="fachati  "
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewBuildVersionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BUILD VERSION : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewBuildVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:text="fachati  "
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewBuildNumberName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BUILD NUMBER : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewBuildNumberValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewKernelVersionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KERNEL VERSION : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewKernelVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewBaseBandVersionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BASE BAND VERSION : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewBaseBandVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewAndroidVersionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android VERSION : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewAndroidVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewModelName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MODEL : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewModelValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewBatteryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Battery : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewBatteryValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewWifiAddressName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WIFI ADDRESS : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewWifiAddressValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewBluetoothAddressName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BLUETOOTH ADDRESS : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewBluetoothAddressValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="end"
+                        android:paddingRight="10dp"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewSerialNumberName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SERIAL NUMBER : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewSerialNumberValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewApiVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="API VERSION : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewApiVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewIMEI1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMEI 1 : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewIMEI1Value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewIMEI2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMEI 2 : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewIMEI2Value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                /////////////////////
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewIMSI1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMSI 1 : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewIMSI1Value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewIMSI2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMSI 2 : "
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewIMSI2Value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:paddingRight="10dp"
+                        android:gravity="end"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

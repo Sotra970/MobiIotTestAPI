@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.TabView.Printer.PrintTextFragment">
+
+    <EditText
+        android:id="@+id/editTextPathBitmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bitmap path"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@color/Security">
+    </EditText>
+
+    <Button
+            android:id="@+id/buttonPrintBitmapFromPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Security"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="Print Bitmap from Storage"
+            android:padding="15dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonPrintBitmapRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:text="Print Bitmap from res"
+        android:padding="15dp">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/editTextQrCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="QrCode content"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@color/Security">
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonPrintBitmapQrCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:text="Print QrCode"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/buttonPrintBitmapScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:text="Print Screen"
+        android:padding="15dp">
+
+    </Button>
+
+
+
+
+
+
+</LinearLayout>

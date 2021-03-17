@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Switch
+        android:id="@+id/switchWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable/Disable Wifi"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Bluetooth"/>
+
+    <Button
+        android:id="@+id/fragment_bluetooth_get_pair_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Bluetooth"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:text="Get Pair Device"/>
+
+    <Button
+        android:id="@+id/fragment_bluetooth_get_unPair_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Bluetooth"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:text="get UnPair Device"/>
+
+
+
+</LinearLayout>

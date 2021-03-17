@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.TabView.RebootFragment">
+
+    <Button
+        android:id="@+id/buttonShutDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="SHUT DOWN"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/Reboot"/>
+
+    <Button
+        android:id="@+id/buttonReboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REBOOT"
+        android:layout_margin="3dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/Reboot"/>
+
+    <Button
+        android:id="@+id/buttonFactoryReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FACTORY RESET"
+        android:layout_margin="3dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/Reboot"/>
+
+    <Button
+        android:id="@+id/buttonDestroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESTROY"
+        android:layout_margin="3dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/Reboot"/>
+
+</LinearLayout>

@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Activity.ActionActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:background="@color/colorMaterialGreen"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="#B2240B"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:onClick="clickPackage"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_package"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:onClick="clickSecurity"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_kiosk"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/colorAccent2"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:onClick="clickNotification"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_notification"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/colorReboot"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:onClick="clickReboot"
+                android:src="@drawable/ic_reboot"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reboot"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/colorConnectivity"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:onClick="clickConnectivity"
+                android:src="@drawable/ic_connectivity"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connectivity"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+
+            android:background="@color/colorStore"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:onClick="clickStore"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_store"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+
+            android:background="@color/colorApplication"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:onClick="clickApplication"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_application"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+
+            android:background="@color/colorAnimation"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:onClick="clickAnimation"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_animation"
+                android:text="test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animation"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignLeft="@+id/layoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:visibility="gone"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <android.support.design.widget.TabLayout
+            android:visibility="gone"
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@android:color/black">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabChats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabCalls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabReboot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reboot" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabConnectivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connectivity" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STORE" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabApplication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animation" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

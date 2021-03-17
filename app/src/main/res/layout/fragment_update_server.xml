@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextServerLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:hint="Update Folder link"
+        android:textColor="#ffffff"
+        android:background="@color/updateServer"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/buttonStartCheckServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@color/updateServer"
+        android:textColor="#ffffff"
+        android:text="Check server"/>
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/textViewDescUpdateServer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How i can configure my server?\n - Create a folder in your server, example [devices]\n
+- Your link will be [www.yourserver.com/devices/]\n
+- In this folder you must create a file [version.txt], this file contains the packages to install or update"
+                android:textColor="@color/updateServer"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/version"></ImageView>
+
+            <TextView
+                android:id="@+id/textViewDescUpdateServer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" - If version code in  version.txt file > version code of the package on device, the service will update your application\nif the package in version.txt does not exist in the device, the system will do an installation.\n
+- You have to put all the apk in the same folder as version.txt file.\n
+- Rename the apk with the package name."
+                android:textColor="@color/updateServer"
+                android:textSize="15dp">
+
+
+
+            </TextView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/device_content"></ImageView>
+
+            <TextView
+                android:id="@+id/textViewDescUpdateServer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="In this example we check the server when we click on the [check server] button, but you can schedule the server check, after the reboot or twice a week, depending on your architecture"
+                android:textColor="@color/updateServer"
+                android:textSize="16dp">
+
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

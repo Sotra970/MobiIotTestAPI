@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebg"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.Activity.ChoiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonSimpleTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple Test"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:textColor="@color/DATA">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/textViewSimpleTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="To test all API functions.\nPlease check API version in Settings before starting test."
+            android:textColor="@color/white"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonReceiveAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Receive Action"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:textColor="@color/DATA">
+        </Button>
+        <TextView
+            android:id="@+id/textViewReceiveAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="this is your token : c37b2f70681bfd57f9ecf4\nSend your Token to the notification server to receive remote actions"
+            android:textColor="@color/white"
+            android:textSize="16dp">
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/buttonSendAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Send Action"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:textColor="@color/DATA">
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonSelfTesting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self Testing"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:textColor="@color/DATA">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context=".TabView.connectivityFragment">
+
+        <Switch
+            android:id="@+id/SwitchUnknownSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unknown Source"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchAdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADB"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchMTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MTP"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchPTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PTP"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Storage"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchFileTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File Transfer"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchUsb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usb Tethering"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchMidi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Midi"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+
+    <Switch
+        android:id="@+id/switchPtp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PTP"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Security"/>
+</LinearLayout>

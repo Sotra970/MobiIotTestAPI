@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorAnimation">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentStart="@+id/layoutButton"
+        android:layout_alignStart="@+id/layoutButton"
+        >
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </RadioGroup>
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAnimation"
+            android:layout_weight="1"
+            android:text="CANCEL"/>
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorAnimation"
+            android:text="CHANGE"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

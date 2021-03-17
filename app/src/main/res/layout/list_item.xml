@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/circle"
+    android:orientation="horizontal"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textImei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/textIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonChangeGroup"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_configuration"/>
+
+
+
+    
+</RelativeLayout>

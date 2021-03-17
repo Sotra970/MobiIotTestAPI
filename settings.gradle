@@ -1,0 +1,4 @@
+include ':MobiIotAndroidQApi'
+include ':toIiboM'
+include ':MP3P_Lib'
+include ':app'

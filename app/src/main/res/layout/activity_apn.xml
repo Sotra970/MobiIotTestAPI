@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_edit_apn"/>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true">-->
+
+    <!--&lt;!&ndash;name&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Name"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"-->
+    <!--android:textSize="15sp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;apn&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="APN"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_apn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;proxy&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Proxy"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_proxy"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;username&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Username"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_username"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;password&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Password"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_password"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;server&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Server"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_server"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mmsc&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MMSC"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_mmsc"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mms proxy&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MMS proxy"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_mms_proxy"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mms port&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MMS port"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_mms_prot"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mcc&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MCC"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_mcc"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mnc&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MNC"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_mnc"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+    <!---->
+    <!--&lt;!&ndash;authentication type&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Authentication type"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_auth_type"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;apn type&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="APN type"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_apn_type"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;apn protocol&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="APN protocol"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_apn_protocol"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;apn roaming protocol&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="APN roaming protocol"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_apn_roaming_protocol"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+    <!---->
+    <!--&lt;!&ndash;apn enable/disable&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="APN enable/disable"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="#aaa"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_apn_apn_disoren"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="APN enable"-->
+    <!--android:textColor="#aaa"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;bearer&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Bearer"-->
+    <!--android:textSize="20sp"/>-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_apn_bearer"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mvno type&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MVNO type"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="#aaa"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_apn_mvno_type"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"-->
+    <!--android:textColor="#aaa"/>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;mvno value&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="MVNO value"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="#aaa"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_apn_mvno_value"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Not set"-->
+    <!--android:textColor="#aaa"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="save"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:onClick="saveNewApn"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="10dp"/>&ndash;&gt;-->
+    <!--</LinearLayout>>-->
+    <!--</ScrollView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Package"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:padding="6dp">
+
+            <EditText
+                android:id="@+id/editTextPackageApk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="PackageName"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/editTextUrlApk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="APK URL"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonInstallApk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/Package"
+            android:textColor="#ffffff"
+            android:text="INSTALL FROM URL"/>
+
+        <Button
+            android:id="@+id/buttonInstallApkStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/Package"
+            android:textColor="#ffffff"
+            android:text="INSTALL FROM Storage"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="3dp"
+        android:background="@color/Package">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdateApk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/Package"
+            android:textColor="#ffffff"
+            android:text="UPDATE FROM URL"/>
+
+        <Button
+            android:id="@+id/buttonUpdateApkStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/Package"
+            android:textColor="#ffffff"
+            android:text="UPDATE FROM STORAGE"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="3dp"
+        android:background="@color/Package">
+
+    </View>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Package"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:padding="6dp">
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

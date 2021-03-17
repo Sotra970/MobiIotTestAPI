@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabView.AnimationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAnimation"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/textViewUrlAPK"
+            android:enabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:text="URL ANIMATION : "
+            android:textSize="14dp" />
+
+
+        <EditText
+            android:id="@+id/editTextUrlAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonChangeBootAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_margin="3dp"
+            android:padding="6dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAnimation"
+            android:textColor="#ffffff"
+            android:text="CHANGE BOOT ANIMATION"/>
+
+        <Button
+            android:id="@+id/buttonChangeShutAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_margin="3dp"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAnimation"
+            android:textColor="#ffffff"
+            android:text="CHANGE SHUT ANIMATION"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorAnimation">
+
+    </View>
+
+    <Button
+        android:id="@+id/buttonChangelanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="3dp"
+        android:padding="6dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAnimation"
+        android:textColor="#ffffff"
+        android:text="CHANGE LANGUAGE"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorAnimation">
+
+    </View>
+
+    <Button
+        android:id="@+id/buttonChangeTimeZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="3dp"
+        android:padding="6dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAnimation"
+        android:textColor="#ffffff"
+        android:text="CHANGE TIME ZONE"/>
+
+
+
+</LinearLayout>

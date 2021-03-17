@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorStore">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/textApkName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="APK NAME"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/textApkVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            android:hint="APK VERSION"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/textApkPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="APK PACKAGE"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/textApkUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="APK URL"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorStore"
+            android:layout_weight="1"
+            android:text="ADD"/>
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorStore"
+            android:text="CANCEL"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

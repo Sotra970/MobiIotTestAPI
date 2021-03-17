@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.TabView.Printer.PrintTextFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/textViewSyncMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Sync mode avoid user to print with returns value "
+        android:gravity="center_horizontal"
+        android:textColor="#AEC0C1"
+        android:textSize="18dp">
+
+    </TextView>
+
+
+
+        <Switch
+            android:id="@+id/SwitchSyncMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Sync mode"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/white"
+            android:background="@color/Security"/>
+
+    <Button
+        android:id="@+id/buttonLongTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:text="Print Long Ticket[Bitmap and text]"
+        android:padding="15dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonLongTicketBitmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:text="Print Long Ticket[Bitmap]"
+        android:padding="15dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonLongTicketText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:text="Print Long Ticket[Text]"
+        android:padding="15dp">
+
+    </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

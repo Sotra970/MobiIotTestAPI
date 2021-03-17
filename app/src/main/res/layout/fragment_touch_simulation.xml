@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:background="@color/Touch"
+            android:id="@+id/radio_group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Touch"
+                android:textColor="@color/white"
+                android:background="@color/Touch"
+                android:id="@+id/radioButtonTouch"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long Touch"
+                android:textColor="@color/white"
+                android:background="@color/Touch"
+                android:id="@+id/radioButton_LongTouch"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swipe"
+                android:textColor="@color/white"
+                android:background="@color/Touch"
+                android:id="@+id/radioButton_swipe"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click Button"
+                android:textColor="@color/white"
+                android:background="@color/Touch"
+                android:id="@+id/radioButton_cick"
+                android:checked="false" />
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:id="@+id/fragment_wifi_modifyLinear"
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:padding="15dp"
+
+            android:layout_height="wrap_content"
+            android:background="@color/Touch"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutX1"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editTextX1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:hint="X1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <EditText
+                    android:id="@+id/editTextY1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:hint="Y1"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutX2"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/editTextX2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:hint="X2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <EditText
+                    android:id="@+id/editTextY2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:hint="Y2"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1000"
+                android:hint="Time"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/editTextCodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_weight="1"
+                android:hint="Code Button"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/buttonSendSimulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:textColor="@color/Touch"
+                android:text="OK"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

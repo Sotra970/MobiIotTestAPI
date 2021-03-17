@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabView.NotificationAdbFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent2"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/textViewNotification"
+            android:enabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:text="NOTIFICATION : "
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/editTextNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSendNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_margin="2dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent2"
+        android:textColor="#ffffff"
+        android:text="   SEND NOTIFICATION   "/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorAccent2">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent2"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/textViewCommand"
+            android:enabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:text="ADB CMD : "
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/editTextCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSendCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_margin="2dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent2"
+        android:textColor="#ffffff"
+        android:text="   SEND COMMAND   "/>
+
+</LinearLayout>

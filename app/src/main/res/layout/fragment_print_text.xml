@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.TabView.Printer.PrintTextFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Text To Print"
+        android:text="Hello World Print Text"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@color/Security">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/SwitchBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/white"
+            android:background="@color/Security"/>
+
+        <Switch
+            android:id="@+id/switchUnderline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Underline"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/white"
+            android:background="@color/Security"/>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:padding="10dp"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/textViewSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Text Size"
+            ></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerSize"
+            android:layout_width="wrap_content"
+                android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:padding="10dp"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/textViewFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Text Font"
+            ></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerFont"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:padding="10dp"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/textViewDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Text Direction"
+            ></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerDirection"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:padding="10dp"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/textViewAlignment"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Text Alignment"
+            ></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerAlignment"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Security"
+        android:padding="10dp"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/textViewDarkness"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Text Darkness"
+            ></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerDarkness"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/buttonPrintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Security"
+            android:textColor="@color/white"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="Print"
+            android:padding="15dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

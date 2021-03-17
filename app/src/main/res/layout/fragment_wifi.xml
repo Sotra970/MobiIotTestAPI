@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switchWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable/Disable Wifi"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:background="@color/WIFI"/>
+
+        <Switch
+            android:id="@+id/switchHotspotWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable/Disable HotSpot"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:background="@color/WIFI"/>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_wifi_modifyLinear"
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:background="@color/WIFI"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/fragment_wifi_etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="name"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <EditText
+                    android:id="@+id/fragment_wifi_etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="password"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fragment_wifi_btEditHotspot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:textColor="@color/WIFI"
+                android:text="Update Hotpost Information"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fragment_wifi_btConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/WIFI"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="Wifi List/Connect"/>
+
+        <Button
+            android:id="@+id/fragment_wifi_getStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/WIFI"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="Wifi status"/>
+
+
+        <TextView
+            android:id="@+id/fragment_wifi_tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/WIFI"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.TabView.SecuritySettingsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switchHideStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIDE STATUS BAR"
+            android:textColor="@color/white"
+            android:layout_margin="3dp"
+            android:padding="15dp"
+            android:textSize="15dp"
+            android:background="@color/Kiosk"/>
+
+        <Switch
+            android:id="@+id/switchBlockPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLOCK CONTROL PANEL"
+            android:layout_margin="3dp"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:background="@color/Kiosk"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:elevation="3dp"
+            android:background="@color/Kiosk">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/layoutSettingsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Kiosk"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+            <Button
+                android:id="@+id/buttonHideSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:text="HIDE SETTINGS"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:background="@color/Kiosk"/>
+
+            <Button
+                android:id="@+id/buttonResetSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="RESET SETTINGS"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:background="@color/Kiosk"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

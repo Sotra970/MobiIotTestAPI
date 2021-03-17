@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobiiot.client.Activity.MapViewActivity">
+
+    <Switch
+        android:id="@+id/switchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:background="@color/Location"/>
+
+    <LinearLayout
+        android:id="@+id/layoutLocationMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/Location"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:background="@color/Location"
+            android:id="@+id/radioGroup_locationMode">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High accuracy"
+                android:textColor="@color/white"
+                android:background="@color/Location"
+                android:id="@+id/radioButton_mode1"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Saving"
+                android:textColor="@color/white"
+                android:background="@color/Location"
+                android:id="@+id/radioButton_mode2"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device Only"
+                android:textColor="@color/white"
+                android:background="@color/Location"
+                android:id="@+id/radioButton_mode3"
+                android:checked="false" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSaveLocationMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/white"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:elevation="5dp"
+            android:textColor="@color/Location"
+            android:text="save"/>
+
+    </LinearLayout>
+
+
+
+
+        <org.osmdroid.views.MapView
+            android:layout_margin="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+
+</LinearLayout>
